@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/colorMyViewsFragment" android:icon="@drawable/ic_color_lens_24" android:title="@string/color_my_view"/>
+    <item android:id="@+id/diceRollerFragment" android:icon="@drawable/ic_casino_24" android:title="@string/dice_roller"/>
+    <item android:id="@+id/aboutMeFragment" android:icon="@drawable/ic_person_24" android:title="@string/about_me"/>
+    <item android:id="@+id/triviaTitleFragment" android:icon="@drawable/ic_play_arrow_24" android:title="@string/trivia_game"/>
+    <item android:id="@+id/guessTitleFragment" android:icon="@drawable/ic_play_circle_outline_24" android:title="@string/guess_game"/>
+    <item android:id="@+id/sleepTrackerFragment" android:icon="@drawable/ic_snooze_24" android:title="@string/track_my_sleep_quality_menu"/>
+    <item android:id="@+id/marsOverviewFragment" android:icon="@drawable/ic_cloud_circle" android:title="@string/mars_real_e_state"/>
+</menu>
