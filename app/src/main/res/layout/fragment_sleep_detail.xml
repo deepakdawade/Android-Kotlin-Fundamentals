@@ -6,13 +6,13 @@
     <data>
         <variable
             name="sleepDetailViewModel"
-            type="com.example.androidkotlinfundamentals.screens.trackmysleepquality.sleepdetail.SleepDetailViewModel" />
+            type="com.example.androidkotlinfundamentals.trackmysleepquality.sleepdetail.SleepDetailViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".screens.trackmysleepquality.sleepdetail.SleepDetailFragment">
+        tools:context=".trackmysleepquality.sleepdetail.SleepDetailFragment">
 
         <ImageView
             android:id="@+id/quality_image"

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="scoreViewModel"
-            type="com.example.androidkotlinfundamentals.screens.guesstheword.score.GuessScoreViewModel" />
+            type="com.example.androidkotlinfundamentals.guesstheword.score.GuessScoreViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -138,4 +138,9 @@ I mastered #UdacityAndroidTrivia with %1$d/%2$d correct questions!
     <string name="display_type">For %s</string>
     <string name="display_price_monthly_rental">$%,.0f/month</string>
     <string name="display_price">$%,.0f</string>
+    <string name="mars_image">Mars Image</string>
+    <string name="image_status">Image Status</string>
+    <string name="dev_byte">Dev Byte</string>
+    <string name="play_icon">Play Icon</string>
+    <string name="video_thumbnail">Video Thumbnail</string>
 </resources>

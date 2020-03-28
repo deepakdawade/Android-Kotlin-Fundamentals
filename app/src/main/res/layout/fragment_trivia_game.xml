@@ -8,7 +8,7 @@
 
         <variable
             name="game"
-            type="com.example.androidkotlinfundamentals.screens.trivia.game.TriviaGameFragment" />
+            type="com.example.androidkotlinfundamentals.trivia.game.TriviaGameFragment" />
     </data>
 
     <ScrollView

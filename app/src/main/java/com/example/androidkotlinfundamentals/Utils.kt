@@ -6,7 +6,7 @@ import android.os.Build
 import android.text.Html
 import android.text.Spanned
 import androidx.core.text.HtmlCompat
-import com.example.androidkotlinfundamentals.screens.trackmysleepquality.database.SleepNight
+import com.example.androidkotlinfundamentals.trackmysleepquality.database.SleepNight
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.TimeUnit

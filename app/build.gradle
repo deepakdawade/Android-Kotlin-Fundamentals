@@ -35,41 +35,76 @@ android {
     dataBinding {
         enabled = true
     }
+    androidExtensions {
+        experimental = true
+    }
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.2.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0'
-    implementation 'androidx.room:room-runtime:2.2.5'
-    kapt 'androidx.room:room-compiler:2.2.5'
-    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:support-annotations:28.0.0'
+
+    testImplementation 'junit:junit:4.13'
+
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
-    implementation 'com.google.android.material:material:1.2.0-alpha05'
+    implementation "androidx.core:core-ktx:$version_core"
+
+    implementation "androidx.constraintlayout:constraintlayout:$version_constraint_layout"
+
+    implementation "com.google.android.material:material:$version_material_design"
+
     implementation 'com.android.support:design:28.0.0'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.2.1'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.2.1'
 
-    implementation 'com.jakewharton.timber:timber:4.7.1'
-    annotationProcessor 'androidx.room:room-compiler:2.2.5'
+    implementation "androidx.lifecycle:lifecycle-extensions:$version_lifecycle_extensions"
 
-    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$version_retrofit_coroutines_adapter"
+    implementation "androidx.navigation:navigation-fragment-ktx:$version_navigation"
+
+    implementation "androidx.navigation:navigation-ui-ktx:$version_navigation"
+
+    implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0'
+
+    implementation "com.jakewharton.timber:timber:$version_timber"
+
+    annotationProcessor "androidx.room:room-compiler:$version_room"
+
+    implementation "androidx.room:room-runtime:$version_room"
+
+    kapt "androidx.room:room-compiler:$version_room"
 
     // Moshi
     implementation "com.squareup.moshi:moshi:$version_moshi"
+
     implementation "com.squareup.moshi:moshi-kotlin:$version_moshi"
 
-    // Retrofit with Moshi Converter
     implementation "com.squareup.retrofit2:retrofit:$version_retrofit"
+
+    // Retrofit with Moshi Converter
     implementation "com.squareup.retrofit2:converter-moshi:$version_retrofit"
+
+    // Retrofit with Scalars Converter
+//    implementation "com.squareup.retrofit2:converter-scalars:$version_retrofit"
+
     // Glide
+    //noinspection GradleDependency
     implementation "com.github.bumptech.glide:glide:$version_glide"
 
+    //  Kotlin Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version_kotlin_coroutines"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version_kotlin_coroutines"
+
+    //Retrofit coroutines adapter
+    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$version_retrofit_coroutines_adapter"
+    // Joda time library for dealing with time
+    implementation "joda-time:joda-time:$version_joda"
+    //RecyclerView
+    implementation "androidx.recyclerview:recyclerview:$version_recyclerview"
+    implementation "android.arch.work:work-runtime-ktx:$version_work"
 }

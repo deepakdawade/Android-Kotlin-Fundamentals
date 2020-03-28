@@ -6,10 +6,10 @@
     <data>
     <variable
         name="sleep"
-        type="com.example.androidkotlinfundamentals.screens.trackmysleepquality.database.SleepNight" />
+        type="com.example.androidkotlinfundamentals.trackmysleepquality.database.SleepNight" />
         <variable
             name="clickListener"
-            type="com.example.androidkotlinfundamentals.screens.trackmysleepquality.sleeptracker.SleepNightListener" />
+            type="com.example.androidkotlinfundamentals.trackmysleepquality.sleeptracker.SleepNightListener" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

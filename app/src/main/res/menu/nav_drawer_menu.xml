@@ -6,4 +6,5 @@
     <item android:id="@+id/guessTitleFragment" android:icon="@drawable/ic_play_circle_outline_24" android:title="@string/guess_game"/>
     <item android:id="@+id/sleepTrackerFragment" android:icon="@drawable/ic_snooze_24" android:title="@string/track_my_sleep_quality_menu"/>
     <item android:id="@+id/marsOverviewFragment" android:icon="@drawable/ic_cloud_circle" android:title="@string/mars_real_e_state"/>
+    <item android:id="@+id/devByteFragment" android:icon="@drawable/ic_developer_mode_24" android:title="@string/dev_byte"/>
 </menu>

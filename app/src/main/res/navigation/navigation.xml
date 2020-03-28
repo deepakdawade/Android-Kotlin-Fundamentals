@@ -7,41 +7,40 @@
 
     <fragment
         android:id="@+id/triviaGameFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.trivia.game.TriviaGameFragment"
+        android:name="com.example.androidkotlinfundamentals.trivia.game.TriviaGameFragment"
         android:label="@string/trivia_game"
-        tools:layout="@layout/fragment_trivia_game" >
+        tools:layout="@layout/fragment_trivia_game">
         <action
             android:id="@+id/action_gameFragment_to_gameWonFragment"
             app:destination="@id/triviaGameWonFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_out_right"/>
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_gameFragment_to_gameOverFragment"
             app:destination="@id/triviaGameOverFragment"
-            app:popUpTo="@id/triviaGameFragment"
-            app:popUpToInclusive="true"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_out_right"/>
-    </fragment>
-    <fragment
-        android:id="@+id/triviaGameWonFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.trivia.game.TriviaGameWonFragment"
-        android:label="@string/trivia_game"
-        tools:layout="@layout/fragment_trivia_game_won" >
-        <action
-            android:id="@+id/action_gameWonFragment_to_gameFragment"
-            app:destination="@id/triviaGameFragment"
-            app:popUpTo="@id/triviaTitleFragment"
-            app:popUpToInclusive="false"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_right"
-            />
+            app:popUpTo="@id/triviaGameFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/triviaGameWonFragment"
+        android:name="com.example.androidkotlinfundamentals.trivia.game.TriviaGameWonFragment"
+        android:label="@string/trivia_game"
+        tools:layout="@layout/fragment_trivia_game_won">
+        <action
+            android:id="@+id/action_gameWonFragment_to_gameFragment"
+            app:destination="@id/triviaGameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/triviaTitleFragment"
+            app:popUpToInclusive="false" />
         <argument
             android:name="numQuestions"
             app:argType="integer" />
@@ -51,163 +50,158 @@
     </fragment>
     <fragment
         android:id="@+id/triviaGameOverFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.trivia.game.TriviaGameOverFragment"
+        android:name="com.example.androidkotlinfundamentals.trivia.game.TriviaGameOverFragment"
         android:label="@string/trivia_game"
-        tools:layout="@layout/fragment_trivia_game_over" >
+        tools:layout="@layout/fragment_trivia_game_over">
         <action
             android:id="@+id/action_gameOverFragment_to_gameFragment"
             app:destination="@id/triviaGameFragment"
-            app:popUpTo="@id/triviaTitleFragment"
-            app:popUpToInclusive="false"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_right"
-            />
+            app:popUpTo="@id/triviaTitleFragment"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/triviaAboutFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.trivia.TriviaAboutFragment"
+        android:name="com.example.androidkotlinfundamentals.trivia.TriviaAboutFragment"
         android:label="@string/about_trivia"
-        tools:layout="@layout/fragment_trivia_about" >
+        tools:layout="@layout/fragment_trivia_about">
         <action
             android:id="@+id/action_aboutFragment_to_titleFragment"
             app:destination="@id/triviaGameFragment"
-            app:popUpTo="@id/triviaTitleFragment"
-            app:popUpToInclusive="false"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_right"
-            />
+            app:popUpTo="@id/triviaTitleFragment"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/triviaTitleFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.trivia.title.TriviaTitleFragment"
+        android:name="com.example.androidkotlinfundamentals.trivia.title.TriviaTitleFragment"
         android:label="@string/trivia_game"
-        tools:layout="@layout/fragment_trivia_title" >
+        tools:layout="@layout/fragment_trivia_title">
         <action
             android:id="@+id/action_titleFragment_to_gameFragment"
             app:destination="@id/triviaGameFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_out_right"
-            />
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/triviaRulesFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.trivia.TriviaRulesFragment"
+        android:name="com.example.androidkotlinfundamentals.trivia.TriviaRulesFragment"
         android:label="@string/game_rules"
-        tools:layout="@layout/fragment_trivia_rules" >
+        tools:layout="@layout/fragment_trivia_rules">
         <action
             android:id="@+id/action_rulesFragment_to_titleFragment"
             app:destination="@id/triviaGameFragment"
-            app:popUpTo="@id/triviaTitleFragment"
-            app:popUpToInclusive="false"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_right"
-            />
+            app:popUpTo="@id/triviaTitleFragment"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/colorMyViewsFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.colormyview.ColorMyViewsFragment"
+        android:name="com.example.androidkotlinfundamentals.colormyview.ColorMyViewsFragment"
         android:label="Color My Views" />
     <fragment
         android:id="@+id/diceRollerFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.diceroller.DiceRollerFragment"
+        android:name="com.example.androidkotlinfundamentals.diceroller.DiceRollerFragment"
         android:label="Dice Roller" />
     <fragment
         android:id="@+id/aboutMeFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.aboutme.AboutMeFragment"
+        android:name="com.example.androidkotlinfundamentals.aboutme.AboutMeFragment"
         android:label="@string/about_me"
         tools:layout="@layout/fragment_about_me" />
     <fragment
         android:id="@+id/guessGameFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.guesstheword.game.GuessGameFragment"
-        android:label="@string/guess_it" >
+        android:name="com.example.androidkotlinfundamentals.guesstheword.game.GuessGameFragment"
+        android:label="@string/guess_it">
         <action
             android:id="@+id/action_guessGameFragment_to_guessScoreFragment"
             app:destination="@id/guessScoreFragment"
-            app:launchSingleTop="true"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_right"
+            app:launchSingleTop="true"
             app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_out_right"
-            />
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/guessScoreFragment"
         android:name="com.example.android.guesstheword.screens.score.GuessScoreFragment"
-        android:label="@string/your_score" >
+        android:label="@string/your_score">
         <action
             android:id="@+id/action_guessScoreFragment_to_guessGameFragment"
             app:destination="@id/guessGameFragment"
-            app:popUpTo="@id/guessTitleFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/guessTitleFragment"
             app:popUpToInclusive="true" />
         <argument
             android:name="score"
-            app:argType="integer"/>
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/guessTitleFragment"
         android:name="com.example.android.guesstheword.screens.title.GuessTitleFragment"
-        android:label="@string/guess_it" >
+        android:label="@string/guess_it">
         <action
             android:id="@+id/action_guessTitleFragment_to_guessGameFragment"
             app:destination="@id/guessGameFragment"
-            app:launchSingleTop="true"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_right"
+            app:launchSingleTop="true"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/sleepTrackerFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.trackmysleepquality.sleeptracker.SleepTrackerFragment"
+        android:name="com.example.androidkotlinfundamentals.trackmysleepquality.sleeptracker.SleepTrackerFragment"
         android:label="@string/track_my_sleep"
-        tools:layout="@layout/fragment_sleep_tracker" >
+        tools:layout="@layout/fragment_sleep_tracker">
         <action
             android:id="@+id/action_sleeptrackerFragment_to_sleepQualityFragment"
             app:destination="@id/sleepQualityFragment"
-            app:popEnterAnim="@anim/slide_in_right"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_right"
-            app:popExitAnim="@anim/slide_out_right"/>
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_sleepTrackerFragment_to_sleepDetailFragment"
             app:destination="@id/sleepDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/sleepQualityFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.trackmysleepquality.sleepquality.SleepQualityFragment"
+        android:name="com.example.androidkotlinfundamentals.trackmysleepquality.sleepquality.SleepQualityFragment"
         android:label="@string/sleep_quality"
-        tools:layout="@layout/fragment_sleep_quality" >
+        tools:layout="@layout/fragment_sleep_quality">
         <argument
             android:name="sleepNightKey"
             app:argType="long" />
         <action
             android:id="@+id/action_sleepQualityFragment_to_sleepTrackerFragment"
             app:destination="@id/sleepTrackerFragment"
-            app:popUpTo="@id/sleepQualityFragment"
-            app:popUpToInclusive="true"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_out_right"/>
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/sleepQualityFragment"
+            app:popUpToInclusive="true" />
 
     </fragment>
     <fragment
         android:id="@+id/sleepDetailFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.trackmysleepquality.sleepdetail.SleepDetailFragment"
+        android:name="com.example.androidkotlinfundamentals.trackmysleepquality.sleepdetail.SleepDetailFragment"
         android:label="@string/sleep_details"
-        tools:layout="@layout/fragment_sleep_detail" >
+        tools:layout="@layout/fragment_sleep_detail">
         <argument
             android:name="sleepNightKey"
             app:argType="long" />
@@ -215,25 +209,28 @@
             android:id="@+id/action_sleepDetailFragment_to_sleepTrackerFragment"
             app:destination="@id/sleepTrackerFragment"
             app:popUpTo="@id/sleepTrackerFragment"
-            app:popUpToInclusive="true"
-            />
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/marsOverviewFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.marsrealestate.marsoverview.MarsOverviewFragment"
+        android:name="com.example.androidkotlinfundamentals.marsrealestate.marsoverview.MarsOverviewFragment"
         android:label="@string/mars_overview"
-        tools:layout="@layout/fragment_mars_overview" >
+        tools:layout="@layout/fragment_mars_overview">
         <action
             android:id="@+id/action_marsOverviewFragment_to_marsDetailFragment"
             app:destination="@id/marsDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/marsDetailFragment"
-        android:name="com.example.androidkotlinfundamentals.screens.marsrealestate.marsdetail.MarsDetailFragment"
+        android:name="com.example.androidkotlinfundamentals.marsrealestate.marsdetail.MarsDetailFragment"
         android:label="@string/mars_detail"
-        tools:layout="@layout/fragment_mars_detail" >
+        tools:layout="@layout/fragment_mars_detail">
         <argument
             android:name="selectedProperty"
-            app:argType="com.example.androidkotlinfundamentals.screens.marsrealestate.network.MarsProperty" />
+            app:argType="com.example.androidkotlinfundamentals.marsrealestate.network.MarsProperty"/>
     </fragment>
+    <fragment
+        android:id="@+id/devByteFragment"
+        android:name="com.example.androidkotlinfundamentals.devbyteviewer.ui.DevByteFragment"
+        android:label="DevByteFragment" />
 </navigation>
